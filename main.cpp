@@ -2,8 +2,8 @@
 Project: budget-logger
 
 Description:
-	This is a tool that accepts user inputted data and organizes the
-	data into a .csv file for insights into trends over time.
+	This is a tool that accepts user inputted data and organizes the data into
+	a .csv file for insights into trends over time.
 
 Author: Garrett Wyrick
 */
