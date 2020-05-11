@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <None Include="docs\LICENSE.md">
+    <None Include="LICENSE.md">
       <Filter>Resource Files</Filter>
     </None>
-    <None Include="docs\README.md">
+    <None Include="README.md">
       <Filter>Resource Files</Filter>
     </None>
   </ItemGroup>
@@ -23,12 +23,12 @@
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="init_menu.cpp">
+    <ClCompile Include="menus.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="init_menu.hpp">
+    <ClInclude Include="menus.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
