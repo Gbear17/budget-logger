@@ -11,8 +11,6 @@ Author: Garrett Wyrick
 
 #include<iostream>
 
-//THIS IS A TEST
-
 int main() {
 	std::cout << "I am a tool for logging budget data!" << std::endl
 		<< "In the future I will be able to accept data." << std::endl;
