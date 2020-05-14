@@ -8,7 +8,7 @@ namespace menus {
 	}
 
 	void Menu::Print() {
-		int i = 0;
+		int i = 1;
 		std::cout << "\n<<< " << m_title << " >>>" << std::endl;
 		for (std::string option : m_options) {
 			std::cout << " " << i << ") " << option << std::endl;
@@ -17,22 +17,13 @@ namespace menus {
 	}
 
 	int Menu::GetChoice() {
-		int choice = -1;
-		while (choice < 0 || choice > (m_num_options - 1)) {
+		int choice = 0;
+		while (choice < 1 || choice > m_num_options) {
 			std::cout << std::flush << "Make your choice [0-"
-				<< (m_num_options - 1) << "]: ";
+				<< m_num_options << "]: ";
 			std::cin >> choice;
 		}
 		return choice;
 	}
-	
-	/*Menu BuildSomeMenu() {
-		Menu MainMenu("Some Menu");
-		MainMenu.AddOption("This is an option");
-		MainMenu.AddOption("I am also one");
-		MainMenu.AddOption("Third option!");
-		MainMenu.AddOption("Exit");
-		return MainMenu;
-	}*/
 
 } // namespace menus
