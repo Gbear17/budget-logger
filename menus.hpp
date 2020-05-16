@@ -1,11 +1,17 @@
-#ifndef INIT_MENU_H_
-#define INIT_MENU_H_
+#ifndef MENUS_H_
+#define MENUS_H_
 
 #include<iostream>
 #include<string>
 #include<vector>
 
 namespace menus {
+	/*
+	Object Type: Class in namespace menus
+	Description: Contains private data members and public methods for building,
+		and utilizing a menu as a user interface
+	Returns: N/A
+	*/
 	class Menu {
 		std::string m_title;
 		std::vector<std::string> m_options;
@@ -18,8 +24,16 @@ namespace menus {
 		int GetChoice();
 	};
 
-	// builds some menu and returns the Menu object
-	//Menu BuildSomeMenu();
+	// Menu class above /\
+	// Menu builders below \/
+
+	/*
+	Object Type: Function in namespace menus
+	Description: Builds and displays the Main Menu then
+		requests the users' choice
+	Returns: int value of users' choice
+	*/
+	int RunMainMenu();
 
 } // namespace menus
 

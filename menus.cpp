@@ -9,7 +9,7 @@ namespace menus {
 
 	void Menu::Print() {
 		int i = 1;
-		std::cout << "\n<<< " << m_title << " >>>" << std::endl;
+		std::cout << "<<< " << m_title << " >>>" << std::endl;
 		for (std::string option : m_options) {
 			std::cout << " " << i << ") " << option << std::endl;
 			i++;
@@ -24,6 +24,22 @@ namespace menus {
 			std::cin >> choice;
 		}
 		return choice;
+	}
+
+	// Menu class above /\
+	// Menus below \/
+
+	int RunMainMenu() {
+		Menu MainMenu("Budget Logger");
+		MainMenu.AddOption("Exit.");
+		MainMenu.AddOption("Make log entry.");
+		MainMenu.AddOption("I am an option.");
+		MainMenu.AddOption("I, also!");
+		MainMenu.AddOption("Third, am I.");
+
+		MainMenu.Print();
+
+		return MainMenu.GetChoice();
 	}
 
 } // namespace menus

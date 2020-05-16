@@ -12,17 +12,7 @@ Author: Garrett Wyrick
 #include<iostream>
 
 int main() {
-	// Build the main menu START
-	menus::Menu MainMenu("Budget Logger");
-	MainMenu.AddOption("Exit the program.");
-	MainMenu.AddOption("I am an option.");
-	MainMenu.AddOption("I, also!");
-	MainMenu.AddOption("Third, am I.");
-	// Build the main menu END
-
-	MainMenu.Print();
-
-	switch (MainMenu.GetChoice()) { // TODO Explore capturing ESC key
+	switch (menus::RunMainMenu()) {
 	case 1: EXIT_SUCCESS;
 	case 2: break;
 	case 3: break;
@@ -31,3 +21,7 @@ int main() {
 
 	return 0;
 }
+
+// file, namespace, variable, and data member this_is_one
+// class data member m_this_is_one
+// object (declarations/definitions too) ThisIsOne
