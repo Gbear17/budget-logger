@@ -24,4 +24,4 @@ int main() {
 
 // file, namespace, variable, and data member this_is_one
 // class data member m_this_is_one
-// object (declarations/definitions too) ThisIsOne
+// object (class, struct, etc) ThisIsOne

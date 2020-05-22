@@ -139,15 +139,19 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="logfile_io.cpp" />
     <ClCompile Include="menus.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="records_list.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="LICENSE.md" />
     <None Include="README.md" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="logfile_io.hpp" />
     <ClInclude Include="menus.hpp" />
+    <ClInclude Include="records_list.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
