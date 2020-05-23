@@ -26,10 +26,10 @@
     <ClCompile Include="menus.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="records_list.cpp">
+    <ClCompile Include="logfile_io.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="logfile_io.cpp">
+    <ClCompile Include="records.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -37,10 +37,10 @@
     <ClInclude Include="menus.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="records_list.hpp">
+    <ClInclude Include="logfile_io.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="logfile_io.hpp">
+    <ClInclude Include="records.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

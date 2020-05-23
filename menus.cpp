@@ -35,7 +35,7 @@ namespace menus {
 		MainMenu.AddOption("Make log entry.");
 		MainMenu.AddOption("I am an option.");
 		MainMenu.AddOption("I, also!");
-		MainMenu.AddOption("Third, am I.");
+		MainMenu.AddOption("Run test function.");
 
 		MainMenu.Print();
 

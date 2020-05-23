@@ -10,7 +10,6 @@ namespace menus {
 	Object Type: Class in namespace menus
 	Description: Contains private data members and public methods for building,
 		and utilizing a menu as a user interface
-	Returns: N/A
 	*/
 	class Menu {
 		std::string m_title;
@@ -25,7 +24,7 @@ namespace menus {
 	};
 
 	// Menu class above /\
-	// Menu builders below \/
+	// Menu runners below \/
 
 	/*
 	Object Type: Function in namespace menus

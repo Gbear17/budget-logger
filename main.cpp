@@ -8,6 +8,7 @@ Author: Garrett Wyrick
 */
  
 #include"menus.hpp"
+#include"records_list.hpp"
 
 #include<iostream>
 
@@ -17,11 +18,12 @@ int main() {
 	case 2: break;
 	case 3: break;
 	case 4: break;
+	case 5: records::List list; list.TEST_FUNC(); break;
 	}
 
 	return 0;
 }
 
-// file, namespace, variable, and data member this_is_one
+// file, accessor function, namespace, variable, and data member this_is_one
 // class data member m_this_is_one
-// object (class, struct, etc) ThisIsOne
+// object (class, struct, functions, etc) ThisIsOne
