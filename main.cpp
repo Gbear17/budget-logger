@@ -8,17 +8,22 @@ Author: Garrett Wyrick
 */
  
 #include"menus.hpp"
-#include"records_list.hpp"
+#include"records.hpp"
 
 #include<iostream>
+#include "main.h"
 
 int main() {
-	switch (menus::RunMainMenu()) {
-	case 1: EXIT_SUCCESS;
-	case 2: break;
-	case 3: break;
-	case 4: break;
-	case 5: records::List list; list.TEST_FUNC(); break;
+	records::List records_list;
+
+	for (;;) {
+		switch (menus::RunMainMenu()) {
+		case 1: return EXIT_SUCCESS;
+		case 2: records_list.AddRecord(); break;
+		case 3: records_list.Print("all"); break;
+		case 4: break;
+		case 5: records::List list; list.TEST_FUNC(); break;
+		}
 	}
 
 	return 0;

@@ -150,6 +150,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="logfile_io.hpp" />
+    <ClInclude Include="main.h" />
     <ClInclude Include="menus.hpp" />
     <ClInclude Include="records.hpp" />
   </ItemGroup>

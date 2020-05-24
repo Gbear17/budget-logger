@@ -22,10 +22,6 @@ namespace menus {
 		void Print();
 		int GetChoice();
 	};
-
-	// Menu class above /\
-	// Menu runners below \/
-
 	/*
 	Object Type: Function in namespace menus
 	Description: Builds and displays the Main Menu then
@@ -33,7 +29,6 @@ namespace menus {
 	Returns: int value of users' choice
 	*/
 	int RunMainMenu();
-
 } // namespace menus
 
 #endif

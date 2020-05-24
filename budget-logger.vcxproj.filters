@@ -43,5 +43,6 @@
     <ClInclude Include="records.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="main.h" />
   </ItemGroup>
 </Project>
