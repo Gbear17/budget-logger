@@ -3,18 +3,13 @@
 namespace records {
 	// List class private functions
 	std::string List::GetDateTime() {
-		char current_date_time[22] = {NULL};
+		char current_date_time[22] = { NULL };
 		std::time_t raw_time = std::time(nullptr);
-		tm * time = std::localtime(&raw_time);
+		tm* time = std::localtime(&raw_time);
 		std::strftime(current_date_time, 22, "%Y/%m/%d - %H:%M:%S", time);
 		return current_date_time;
 	}
-	void List::Print(int const index) {
-		std::cout << "\n" << m_records[index].date_time
-			<< "\n" << m_records[index].expense_category
-			<< "\n$" << m_records[index].amount_USD << std::endl;
-	}
-	// List class public members
+	// List class public functions
 	List::List() {
 		Record column_heads;
 		column_heads.date_time = "Date & Time";
@@ -43,10 +38,15 @@ namespace records {
 		for (int i = 0; i < m_records.size(); i++) {
 			if (this->m_records[i].expense_category == in_category
 				|| in_category == "all") {
-				this->Print(i);
+				std::cout << "\n" << m_records[i].date_time
+					<< "\n" << m_records[i].expense_category
+					<< "\n$" << m_records[i].amount_USD << std::endl;
 			}
 		}
 		std::cout << "\n*** End of Records ***" << std::endl;
+		std::cout << "Press enter to continue . . .";
+		std::cin.get();
+		std::cin.get();
 	}
 	void List::TEST_FUNC() {
 		std::cout << "TEST_FUNC: " << GetDateTime() << std::endl;

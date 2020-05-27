@@ -17,7 +17,8 @@ namespace menus {
 		int m_num_options;
 	public:
 		Menu(const std::string& in_title) : m_title(in_title),
-			m_num_options(0) {}
+			m_num_options(0) {
+		}
 		void AddOption(const std::string& in_option);
 		void Print();
 		int GetChoice();

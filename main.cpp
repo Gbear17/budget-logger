@@ -6,7 +6,7 @@ Description: This is a tool that accepts user inputted data and organizes the
 
 Author: Garrett Wyrick
 */
- 
+
 #include"menus.hpp"
 #include"records.hpp"
 

@@ -32,7 +32,6 @@ namespace records {
 	private:
 		std::vector<Record> m_records;
 		std::string GetDateTime();
-		void Print(int const index);
 	public:
 		List();
 		void AddRecord();
