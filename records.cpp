@@ -33,22 +33,22 @@ namespace records {
 	void List::Print(std::string in_category) {
 		transform(in_category.begin(), in_category.end(), in_category.begin(),
 			::tolower);
-		std::cout << "\n*** List of Records ***" << std::endl;
+		std::cout << "\n+++ List of Records +++" << std::endl;
 		std::cout << "Category: " << in_category << std::endl;
 		for (int i = 0; i < m_records.size(); i++) {
 			if (this->m_records[i].expense_category == in_category
 				|| in_category == "all") {
-				std::cout << "\n" << m_records[i].date_time
-					<< "\n" << m_records[i].expense_category
-					<< "\n$" << m_records[i].amount_USD << std::endl;
+				std::cout << " -\n" << m_records[i].date_time << std::endl;
+				std::cout << m_records[i].expense_category << std::endl;
+				std::cout << "$" << m_records[i].amount_USD << std::endl;
 			}
 		}
-		std::cout << "\n*** End of Records ***" << std::endl;
+		std::cout << " -\n+++ End of Records +++" << std::endl;
 		std::cout << "Press enter to continue . . .";
 		std::cin.get();
 		std::cin.get();
 	}
 	void List::TEST_FUNC() {
-		std::cout << "TEST_FUNC: " << GetDateTime() << std::endl;
+		std::cout << "\nTEST_FUNC: " << GetDateTime() << std::endl;
 	}
 } // namespace records_list

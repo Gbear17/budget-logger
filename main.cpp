@@ -15,6 +15,7 @@ Author: Garrett Wyrick
 
 int main() {
 	records::List records_list;
+	
 
 	for (;;) {
 		switch (menus::RunMainMenu()) {
